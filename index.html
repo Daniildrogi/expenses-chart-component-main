@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+    <script defer src="/app.js"></script>
+  </head>
+
+  <body>
+    <div class="myBalance">
+      <div class="myBalance-left">
+        <p>My balance</p>
+        <span>$921.48</span>
+      </div>
+      <img src="/images/logo.svg" alt="" />
+    </div>
+
+    <div class="main-card">
+      <h2>Spending - Last 7 days</h2>
+      <div class="charts-container flex column">
+
+        <div class="charts flex row">
+
+          <div class="days" id="mon" aria-valuenow=""></div>
+          <div class="days" id="tue" aria-valuenow=""></div>
+          <div class="days" id="wed" aria-valuenow=""></div>
+          <div class="days" id="thu" aria-valuenow=""></div>
+          <div class="days" id="fri" aria-valuenow=""></div>
+          <div class="days" id="sat" aria-valuenow=""></div>
+          <div class="days" id="sun" aria-valuenow=""></div>
+        </div>
+        <div class="day-names-container flex row">
+          <div class="day">mon</div>
+          <div class="day">tue</div>
+          <div class="day">wed</div>
+          <div class="day">thu</div>
+          <div class="day">fri</div>
+          <div class="day">sat</div>
+          <div class="day">sun</div>
+        </div>
+      </div>
+      <div class="main-card-bottom flex row">
+        <div class="main-card-bottom-left">
+          <p>Total this month</p>
+          <span>$478.33</span>
+        </div>
+        <div class="main-card-bottom-right">
+          <span>+2.4%</span>
+          <p>from last month</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution" style="margin-top: 1rem;">
+      Coded by <a href="https://github.com/Daniildrogi">Daniil Drogichinskii</a>
+    </div>
+  </body>
+</html>

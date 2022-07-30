@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 18px;
+  --Soft-red: #ec755d;
+  --Softer-red: #ff8871;
+  --Cyan: #76b5bc;
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: #fffcf7;
+  --Very-pale-orange: #f7e9dc;
+  font-family: "DM Sans";
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  background-color: var(--Very-pale-orange);
+}
+
+.myBalance {
+  background-color: var(--Soft-red);
+  display: flex;
+  justify-content: space-between;
+  width: 31rem;
+  border-radius: 1rem;
+  padding: 1.1rem;
+  align-items: center;
+  align-content: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.myBalance img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.myBalance p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+}
+
+.myBalance-left span {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.main-card {
+  width: 31rem;
+  background-color: var(--Cream);
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+}
+
+.main-card h2 {
+  color: var(--Dark-brown);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom:  3rem;
+}
+
+.prices-hover-container {
+  justify-content: space-between;
+}
+
+.price-hover {
+  position: sticky;
+  font-size: 0.8rem;
+  font-weight: 400;
+  background-color: var(--Dark-brown);
+  color: var(--Cream);
+  padding: 0.5rem 0.3rem;
+  border-radius: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.charts {
+  justify-content: space-between;
+  align-items: flex-end;
+
+  height: 10rem;
+  max-height: 10rem;
+
+  padding-bottom: 0.5rem;
+
+}
+
+.day-price-wrapper {
+  height: max-content;
+}
+
+.days {
+  position: relative;
+  background-color: var(--Soft-red);
+  border-radius: 0.3rem;
+  width: 2.8rem;
+  height: 8.35rem;
+  max-height: 11rem;
+
+}
+
+.days:hover {
+  background-color: var(--Cyan);
+}
+
+.days:hover::after {
+  position: absolute;
+  top: -3rem;
+  margin-left: -0.9rem;
+  content:attr(aria-valuenow);
+  color: var(--Cream);
+  background-color: var(--Dark-brown);
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.3rem;
+}
+
+
+
+
+.day-names-container {
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.149);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.day {
+
+  width: 2.8rem;
+  text-align: center;
+  color: var(--Medium-brown);
+}
+
+.main-card-bottom {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-card-bottom-left span {
+  color: var(--Dark-brown);
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.main-card-bottom-left p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--Medium-brown);
+}
+
+.main-card-bottom-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main-card-bottom-right span {
+  color: var(--Dark-brown);
+  font-weight: 700;
+  align-self: flex-end;
+}
+
+.main-card-bottom-right p {
+  font-weight: 400;
+  color: var(--Medium-brown);
+}
