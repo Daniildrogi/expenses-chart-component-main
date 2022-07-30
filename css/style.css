@@ -116,6 +116,7 @@ body {
 
 .days:hover {
   background-color: var(--Cyan);
+  cursor: pointer;
 }
 
 .days:hover::after {
